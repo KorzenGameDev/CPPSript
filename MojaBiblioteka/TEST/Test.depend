@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1533857555 source:g:\projekty programowanie\test\main.cpp
+	<iostream>
+	<fstream>
+	"G:\Projekty Programowanie\Biblioteka\bubble_sort.h"
+
+1533857772 g:\projekty programowanie\biblioteka\bubble_sort.h
+	<iostream>
+

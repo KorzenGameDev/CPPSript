@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1533048675 source:g:\projekty programowanie\spoj odleg³oœæ w wyrazach\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	<limits>
+

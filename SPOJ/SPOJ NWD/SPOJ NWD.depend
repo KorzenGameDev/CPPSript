@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1533143034 source:g:\projekty programowanie\spoj nwd\main.cpp
+	<iostream>
+	<cstdlib>
+

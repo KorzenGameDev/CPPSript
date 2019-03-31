@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1532963575 source:g:\projekty programowanie\spoj zastêpowanie trójznaków\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+

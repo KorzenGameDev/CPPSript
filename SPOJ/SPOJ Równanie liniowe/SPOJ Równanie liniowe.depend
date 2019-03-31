@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1533428656 source:g:\projekty programowanie\spoj równanie liniowe\main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<math.h>
+

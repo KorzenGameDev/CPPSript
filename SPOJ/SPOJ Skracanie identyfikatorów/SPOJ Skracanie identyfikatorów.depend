@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1532959710 source:g:\projekty programowanie\spoj skracanie identyfikatorów\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+

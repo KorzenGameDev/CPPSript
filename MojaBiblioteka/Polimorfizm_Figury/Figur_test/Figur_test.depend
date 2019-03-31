@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1534035818 source:g:\projekty programowanie\biblioteka\polimorfizm_figury\figur_test\main.cpp
+	"G:\Projekty Programowanie\Biblioteka\Polimorfizm_Figury\Kwadrat.h"
+
+1534039177 g:\projekty programowanie\biblioteka\polimorfizm_figury\kwadrat.h
+	"Punkty_Uklad_Kartezjanski.h"
+
+1534038472 g:\projekty programowanie\biblioteka\polimorfizm_figury\punkty_uklad_kartezjanski.h
+	"Library_Figura.h"
+
+1534013378 g:\projekty programowanie\biblioteka\polimorfizm_figury\library_figura.h
+	<iostream>
+	<math.h>
+	<cstdlib>
+	<cstdio>
+	<windows.h>
+	<time.h>
+

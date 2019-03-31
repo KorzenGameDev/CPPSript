@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1533855525 source:g:\projekty programowanie\quicksort\main.cpp
+	<iostream>
+	"Quicksort.h"
+
+1533855824 g:\projekty programowanie\quicksort\quicksort.h
+	<iostream>
+
