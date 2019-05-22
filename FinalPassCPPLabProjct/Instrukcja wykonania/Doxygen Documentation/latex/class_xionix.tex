@@ -1,0 +1,215 @@
+\hypertarget{class_xionix}{}\section{Xionix Class Reference}
+\label{class_xionix}\index{Xionix@{Xionix}}
+
+
+przechowuje funkcje do gry xionix  
+
+
+
+
+{\ttfamily \#include $<$Xionix.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_xionix_1_1_enemy}{Enemy}}
+\begin{DoxyCompactList}\small\item\em struktura wroga \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_xionix_a19949767d2f31e6a1e4eb5c0e86ecb62}{Xionix}} (int)
+\begin{DoxyCompactList}\small\item\em konstruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_xionix_a7d54256881a3d69f98aed8a4f503cb2f}\label{class_xionix_a7d54256881a3d69f98aed8a4f503cb2f}} 
+virtual \mbox{\hyperlink{class_xionix_a7d54256881a3d69f98aed8a4f503cb2f}{$\sim$\+Xionix}} ()
+\begin{DoxyCompactList}\small\item\em destruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_xionix_acf09b974f3e1b65347fca5b4c5a05582}\label{class_xionix_acf09b974f3e1b65347fca5b4c5a05582}} 
+void \mbox{\hyperlink{class_xionix_acf09b974f3e1b65347fca5b4c5a05582}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em zaladowuje wszystkie glowne funkcje -\/ klasy menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_xionix_a22bcd2df98afa822983c70afccdfe7f4}\label{class_xionix_a22bcd2df98afa822983c70afccdfe7f4}} 
+static const int {\bfseries R\+O\+WS} =21
+\item 
+\mbox{\Hypertarget{class_xionix_a06ea03be7a68a04ff9d4012806ef2be8}\label{class_xionix_a06ea03be7a68a04ff9d4012806ef2be8}} 
+static const int {\bfseries C\+O\+L\+U\+M\+NS} =35
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_xionix_af746b9702ca0143ec66009836509c683}{Drop}} (int grid\mbox{[}R\+O\+WS\mbox{]}\mbox{[}C\+O\+L\+U\+M\+NS\mbox{]}, int, int)
+\begin{DoxyCompactList}\small\item\em zapelnienie sie odcietych krawedzi mapy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_xionix_aeb43399427861b9476e779b46ebee624}\label{class_xionix_aeb43399427861b9476e779b46ebee624}} 
+void \mbox{\hyperlink{class_xionix_aeb43399427861b9476e779b46ebee624}{Load\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em zaladowuje tekstury \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_xionix_a0277000864442f9c8503063764cd0d57}\label{class_xionix_a0277000864442f9c8503063764cd0d57}} 
+void \mbox{\hyperlink{class_xionix_a0277000864442f9c8503063764cd0d57}{Player\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em sterowanie graczem \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_xionix_a093234e743648b902559789b8ee0d035}{Move}} (int grid\mbox{[}R\+O\+WS\mbox{]}\mbox{[}C\+O\+L\+U\+M\+NS\mbox{]})
+\begin{DoxyCompactList}\small\item\em poruszanie sie graczem \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_xionix_ae1994086daa545ada9c595a236a987ce}{Next\+Level}} (int grid\mbox{[}R\+O\+WS\mbox{]}\mbox{[}C\+O\+L\+U\+M\+NS\mbox{]})
+\begin{DoxyCompactList}\small\item\em nowy poziom w grze \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_xionix_a523cb291105ce5803cf411cf88bac652}{Frame}} (int grid\mbox{[}R\+O\+WS\mbox{]}\mbox{[}C\+O\+L\+U\+M\+NS\mbox{]}, \mbox{\hyperlink{struct_xionix_1_1_enemy}{Enemy}} enemy\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em wykonuje pojedyncza klatke w grze \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_xionix_a69ba1c4f5b9a41cadf52c4816aa52ce4}\label{class_xionix_a69ba1c4f5b9a41cadf52c4816aa52ce4}} 
+int {\bfseries width} =960
+\item 
+\mbox{\Hypertarget{class_xionix_aca5de1c3cff925a7a67a63699ce0f85c}\label{class_xionix_aca5de1c3cff925a7a67a63699ce0f85c}} 
+int {\bfseries height} =480
+\item 
+\mbox{\Hypertarget{class_xionix_a50c0b8c78fefce6753431795ce3d5ace}\label{class_xionix_a50c0b8c78fefce6753431795ce3d5ace}} 
+int {\bfseries enemy\+Count} = 1
+\item 
+\mbox{\Hypertarget{class_xionix_ac2c6565819041d8d76216bf4266bc264}\label{class_xionix_ac2c6565819041d8d76216bf4266bc264}} 
+float {\bfseries timer} =0
+\item 
+\mbox{\Hypertarget{class_xionix_a1b30364ec92df4546c0c806f34e6f65c}\label{class_xionix_a1b30364ec92df4546c0c806f34e6f65c}} 
+float {\bfseries delay} =0.\+07
+\item 
+\mbox{\Hypertarget{class_xionix_a43c33e1a1990fd43d75c78b0b7242778}\label{class_xionix_a43c33e1a1990fd43d75c78b0b7242778}} 
+int {\bfseries level} =1
+\item 
+\mbox{\Hypertarget{class_xionix_a30fb41d85dcfe05daa30c945810a2372}\label{class_xionix_a30fb41d85dcfe05daa30c945810a2372}} 
+int {\bfseries temp} =-\/108
+\item 
+\mbox{\Hypertarget{class_xionix_a93d9c9798175e0c83207029c11b31d0e}\label{class_xionix_a93d9c9798175e0c83207029c11b31d0e}} 
+int {\bfseries offsetX} =9
+\item 
+\mbox{\Hypertarget{class_xionix_a2c87543207dd492bc324b8974d45601b}\label{class_xionix_a2c87543207dd492bc324b8974d45601b}} 
+int {\bfseries offsetY} =3
+\item 
+\mbox{\Hypertarget{class_xionix_ad9335854a2676610314852efeefc6dd3}\label{class_xionix_ad9335854a2676610314852efeefc6dd3}} 
+int {\bfseries x} =0
+\item 
+\mbox{\Hypertarget{class_xionix_a3035ae240ff77cc99b31224bf20233f8}\label{class_xionix_a3035ae240ff77cc99b31224bf20233f8}} 
+int {\bfseries y} =0
+\item 
+\mbox{\Hypertarget{class_xionix_abcd129f011878432fdb7f63870837502}\label{class_xionix_abcd129f011878432fdb7f63870837502}} 
+int {\bfseries dx} =0
+\item 
+\mbox{\Hypertarget{class_xionix_a66ec8c7ce745d05efb1de2b727159fd1}\label{class_xionix_a66ec8c7ce745d05efb1de2b727159fd1}} 
+int {\bfseries dy} =0
+\item 
+\mbox{\Hypertarget{class_xionix_a9b9a777f4ed1c67fca0e754e7ab9004c}\label{class_xionix_a9b9a777f4ed1c67fca0e754e7ab9004c}} 
+sf\+::\+Render\+Window {\bfseries window}
+\item 
+\mbox{\Hypertarget{class_xionix_a80b907ff934310aebaf4e9673cc01b04}\label{class_xionix_a80b907ff934310aebaf4e9673cc01b04}} 
+sf\+::\+Texture {\bfseries t1}
+\item 
+\mbox{\Hypertarget{class_xionix_a9b3634e390377ecb4dde5fd1a2f199ae}\label{class_xionix_a9b3634e390377ecb4dde5fd1a2f199ae}} 
+sf\+::\+Texture {\bfseries t2}
+\item 
+\mbox{\Hypertarget{class_xionix_ac7f5f98f6e5a98ea71d301fc26512021}\label{class_xionix_ac7f5f98f6e5a98ea71d301fc26512021}} 
+sf\+::\+Texture {\bfseries t3}
+\item 
+\mbox{\Hypertarget{class_xionix_a2ec92b3ad41187141c5d7a02359f293b}\label{class_xionix_a2ec92b3ad41187141c5d7a02359f293b}} 
+sf\+::\+Texture {\bfseries t4}
+\item 
+\mbox{\Hypertarget{class_xionix_aa51e605a6730a7ac41b6009392d316ae}\label{class_xionix_aa51e605a6730a7ac41b6009392d316ae}} 
+sf\+::\+Texture {\bfseries t9}
+\item 
+\mbox{\Hypertarget{class_xionix_a6e4b7d89d8bff01aca7393d5d610a2dc}\label{class_xionix_a6e4b7d89d8bff01aca7393d5d610a2dc}} 
+sf\+::\+Texture {\bfseries t10}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_xionix_ae0c786311a41d7394550f9c24592d6f2}\label{class_xionix_ae0c786311a41d7394550f9c24592d6f2}} 
+static const int {\bfseries tile\+Size} =18
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+przechowuje funkcje do gry xionix 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_xionix_a19949767d2f31e6a1e4eb5c0e86ecb62}\label{class_xionix_a19949767d2f31e6a1e4eb5c0e86ecb62}} 
+\index{Xionix@{Xionix}!Xionix@{Xionix}}
+\index{Xionix@{Xionix}!Xionix@{Xionix}}
+\subsubsection{\texorpdfstring{Xionix()}{Xionix()}}
+{\footnotesize\ttfamily Xionix\+::\+Xionix (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+konstruktor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em poziom} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_xionix_af746b9702ca0143ec66009836509c683}\label{class_xionix_af746b9702ca0143ec66009836509c683}} 
+\index{Xionix@{Xionix}!Drop@{Drop}}
+\index{Drop@{Drop}!Xionix@{Xionix}}
+\subsubsection{\texorpdfstring{Drop()}{Drop()}}
+{\footnotesize\ttfamily void Xionix\+::\+Drop (\begin{DoxyParamCaption}\item[{int}]{grid\mbox{[}\+R\+O\+W\+S\mbox{]}\mbox{[}\+C\+O\+L\+U\+M\+N\+S\mbox{]},  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+zapelnienie sie odcietych krawedzi mapy 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tablica} & dwuwymiarowa planszy \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_xionix_a523cb291105ce5803cf411cf88bac652}\label{class_xionix_a523cb291105ce5803cf411cf88bac652}} 
+\index{Xionix@{Xionix}!Frame@{Frame}}
+\index{Frame@{Frame}!Xionix@{Xionix}}
+\subsubsection{\texorpdfstring{Frame()}{Frame()}}
+{\footnotesize\ttfamily void Xionix\+::\+Frame (\begin{DoxyParamCaption}\item[{int}]{grid\mbox{[}\+R\+O\+W\+S\mbox{]}\mbox{[}\+C\+O\+L\+U\+M\+N\+S\mbox{]},  }\item[{\mbox{\hyperlink{struct_xionix_1_1_enemy}{Enemy}}}]{enemy\mbox{[}100\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wykonuje pojedyncza klatke w grze 
+
+param\mbox{[}in\mbox{]} tablica dwuwymiarowa planszy 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tablica} & wrogow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_xionix_a093234e743648b902559789b8ee0d035}\label{class_xionix_a093234e743648b902559789b8ee0d035}} 
+\index{Xionix@{Xionix}!Move@{Move}}
+\index{Move@{Move}!Xionix@{Xionix}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Xionix\+::\+Move (\begin{DoxyParamCaption}\item[{int}]{grid\mbox{[}\+R\+O\+W\+S\mbox{]}\mbox{[}\+C\+O\+L\+U\+M\+N\+S\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+poruszanie sie graczem 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tablica} & dwywymiarowa planszy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_xionix_ae1994086daa545ada9c595a236a987ce}\label{class_xionix_ae1994086daa545ada9c595a236a987ce}} 
+\index{Xionix@{Xionix}!NextLevel@{NextLevel}}
+\index{NextLevel@{NextLevel}!Xionix@{Xionix}}
+\subsubsection{\texorpdfstring{NextLevel()}{NextLevel()}}
+{\footnotesize\ttfamily void Xionix\+::\+Next\+Level (\begin{DoxyParamCaption}\item[{int}]{grid\mbox{[}\+R\+O\+W\+S\mbox{]}\mbox{[}\+C\+O\+L\+U\+M\+N\+S\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+nowy poziom w grze 
+
+po wycieciu 300 kwadratow przenosi gracza na nastepny poziom 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tablica} & dwuwymiarowa planszy \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Repository\+Programing/\+C\+P\+P\+Script/\+Final\+Pass\+C\+P\+P\+Lab\+Projct/\+Game\+Boy/include/Xionix.\+h\end{DoxyCompactItemize}

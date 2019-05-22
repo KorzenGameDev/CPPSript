@@ -85,13 +85,13 @@ void Menu::Setup()
 
 		window.clear();
 
-		Draw(window, 960,480);
+		Draw();
 
 		window.display();
 	}
 }
 
-void Menu::Draw(sf::RenderWindow &window, int width, int height)
+void Menu::Draw()
 {
     sf::Texture t9,t10;
     t10.loadFromFile("images/menu/bg.png");
@@ -120,22 +120,22 @@ void Menu::Draw(sf::RenderWindow &window, int width, int height)
     {
         case 0:
             {
-                DisplayOptions(window,width,height,t2,t3,t5,t7);
+                DisplayOptions(t2,t3,t5,t7);
                 break;
             }
         case 1:
             {
-                DisplayOptions(window,width,height,t1,t4,t5,t7);
+                DisplayOptions(t1,t4,t5,t7);
                 break;
             }
         case 2:
             {
-                DisplayOptions(window,width,height,t1,t3,t6,t7);
+                DisplayOptions(t1,t3,t6,t7);
                 break;
             }
         case 3:
             {
-                DisplayOptions(window,width,height,t1,t3,t5,t8);
+                DisplayOptions(t1,t3,t5,t8);
                 break;
             }
         default:
@@ -147,7 +147,7 @@ void Menu::Draw(sf::RenderWindow &window, int width, int height)
 
 }
 
-void Menu::DisplayOptions(sf::RenderWindow &window, int width, int height, sf::Texture &t1, sf::Texture &t2, sf::Texture &t3, sf::Texture &t4)
+void Menu::DisplayOptions(sf::Texture& t1, sf::Texture& t2, sf::Texture& t3, sf::Texture& t4)
 {
     sf::Sprite snakeButton(t1);
     sf::Sprite xonixButton(t2);

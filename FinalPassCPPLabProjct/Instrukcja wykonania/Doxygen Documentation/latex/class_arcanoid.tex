@@ -1,0 +1,216 @@
+\hypertarget{class_arcanoid}{}\section{Arcanoid Class Reference}
+\label{class_arcanoid}\index{Arcanoid@{Arcanoid}}
+
+
+przechowuje funkcje do gry arkanoid  
+
+
+
+
+{\ttfamily \#include $<$Arcanoid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_arcanoid_a6ba60219dbc5b27d31aa37c0427637b5}{Arcanoid}} (int, int, int)
+\begin{DoxyCompactList}\small\item\em konstruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_arcanoid_ae20e7feb00b1daba5f06f34f130a4d3a}\label{class_arcanoid_ae20e7feb00b1daba5f06f34f130a4d3a}} 
+virtual \mbox{\hyperlink{class_arcanoid_ae20e7feb00b1daba5f06f34f130a4d3a}{$\sim$\+Arcanoid}} ()
+\begin{DoxyCompactList}\small\item\em destruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_arcanoid_a36f0c369debb8abeaf78462297b50616}\label{class_arcanoid_a36f0c369debb8abeaf78462297b50616}} 
+void \mbox{\hyperlink{class_arcanoid_a36f0c369debb8abeaf78462297b50616}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em zaladowuje wszystkie glowne funkcje -\/ klasy menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_arcanoid_ae1af2953934cc8dbf8daf0cf5a3ad2bb}{Draw}} (sf\+::\+Sprite \&s\+Background, sf\+::\+Sprite \&s\+Ball, sf\+::\+Sprite \&s\+Paddle, sf\+::\+Sprite $\ast$block)
+\begin{DoxyCompactList}\small\item\em rysuje okno gry wraz z zawartoscia \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_arcanoid_aa604838d11ffeb78d6d30829894ad0f2}\label{class_arcanoid_aa604838d11ffeb78d6d30829894ad0f2}} 
+void \mbox{\hyperlink{class_arcanoid_aa604838d11ffeb78d6d30829894ad0f2}{Load\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em zaladowuje tekstury z pliku \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arcanoid_a9c73d2330927af62f5e777b5e977795a}{Paddle\+Controller}} (sf\+::\+Sprite \&s\+Paddle)
+\begin{DoxyCompactList}\small\item\em sterowanie platforma \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arcanoid_af254f59625b9c8ec42fe4ffc8166e8dd}{Positioning}} (sf\+::\+Sprite \&s\+Background, sf\+::\+Sprite \&s\+Ball, sf\+::\+Sprite \&s\+Paddle, sf\+::\+Sprite $\ast$block)
+\begin{DoxyCompactList}\small\item\em pozycjonowanie grafiki w oknie \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arcanoid_a70100adb95613ddab4580d4db5cba2ff}{Next\+Level}} ()
+\begin{DoxyCompactList}\small\item\em nastepny poziom \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arcanoid_a4858b07cf4d374ecfed2b8bc41f49943}{Spawn\+Block}} (sf\+::\+Sprite $\ast$block)
+\begin{DoxyCompactList}\small\item\em tworzenie i pozycjonowanie klockow \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_arcanoid_a6634633481944aa9f784fb2edcf6e924}\label{class_arcanoid_a6634633481944aa9f784fb2edcf6e924}} 
+void \mbox{\hyperlink{class_arcanoid_a6634633481944aa9f784fb2edcf6e924}{Get\+Point}} ()
+\begin{DoxyCompactList}\small\item\em inkrementuje zmienna points \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_arcanoid_ac0afdc70f393df6830c0356f0083921e}\label{class_arcanoid_ac0afdc70f393df6830c0356f0083921e}} 
+sf\+::\+Texture {\bfseries t1}
+\item 
+\mbox{\Hypertarget{class_arcanoid_a8d3ca20ec11561a24f2cf839b04523bc}\label{class_arcanoid_a8d3ca20ec11561a24f2cf839b04523bc}} 
+sf\+::\+Texture {\bfseries t2}
+\item 
+\mbox{\Hypertarget{class_arcanoid_a426333dc12d45717fb7ebf39735da26e}\label{class_arcanoid_a426333dc12d45717fb7ebf39735da26e}} 
+sf\+::\+Texture {\bfseries t3}
+\item 
+\mbox{\Hypertarget{class_arcanoid_a22ecb5dbaf836ec2e6f4a672a3bcf48a}\label{class_arcanoid_a22ecb5dbaf836ec2e6f4a672a3bcf48a}} 
+sf\+::\+Texture {\bfseries t4}
+\item 
+\mbox{\Hypertarget{class_arcanoid_a4e00571fc44a1afca3c0e4fb44ae903b}\label{class_arcanoid_a4e00571fc44a1afca3c0e4fb44ae903b}} 
+sf\+::\+Render\+Window {\bfseries window}
+\item 
+\mbox{\Hypertarget{class_arcanoid_a540cd96df70724938cd11236409b0206}\label{class_arcanoid_a540cd96df70724938cd11236409b0206}} 
+int {\bfseries width} =960
+\item 
+\mbox{\Hypertarget{class_arcanoid_a75b141785a1518e4241e002397308d2a}\label{class_arcanoid_a75b141785a1518e4241e002397308d2a}} 
+int {\bfseries height} =480
+\item 
+\mbox{\Hypertarget{class_arcanoid_a0e99faa9367ca641226f25c794f0688d}\label{class_arcanoid_a0e99faa9367ca641226f25c794f0688d}} 
+float {\bfseries dx} =4
+\item 
+\mbox{\Hypertarget{class_arcanoid_a238f64a069ed3e2cc8b5f00f919fb8dd}\label{class_arcanoid_a238f64a069ed3e2cc8b5f00f919fb8dd}} 
+float {\bfseries dy} =4
+\item 
+\mbox{\Hypertarget{class_arcanoid_a590d9ee2620db6eba4f3422b40ef11eb}\label{class_arcanoid_a590d9ee2620db6eba4f3422b40ef11eb}} 
+float {\bfseries x} =width/2
+\item 
+\mbox{\Hypertarget{class_arcanoid_a60596b0de9675320ceb23480c950fd04}\label{class_arcanoid_a60596b0de9675320ceb23480c950fd04}} 
+float {\bfseries y} =height/2+100
+\item 
+\mbox{\Hypertarget{class_arcanoid_abd3770cdd0658f5e784cfb485fc4b542}\label{class_arcanoid_abd3770cdd0658f5e784cfb485fc4b542}} 
+int {\bfseries offset\+Xmin} =170
+\item 
+\mbox{\Hypertarget{class_arcanoid_a4052ff4eb8e4fba8ce5521bc2d8a4e60}\label{class_arcanoid_a4052ff4eb8e4fba8ce5521bc2d8a4e60}} 
+int {\bfseries offset\+Xmax} =800
+\item 
+\mbox{\Hypertarget{class_arcanoid_ac71d838340413e77d987a3f8caaac913}\label{class_arcanoid_ac71d838340413e77d987a3f8caaac913}} 
+int {\bfseries block\+Number} =0
+\item 
+\mbox{\Hypertarget{class_arcanoid_a63b9a56c3678777a04a2a8f0211a6e57}\label{class_arcanoid_a63b9a56c3678777a04a2a8f0211a6e57}} 
+int {\bfseries to\+Destroy\+Max} =0
+\item 
+\mbox{\Hypertarget{class_arcanoid_ada737cf96d2c729f5d774784e50693e0}\label{class_arcanoid_ada737cf96d2c729f5d774784e50693e0}} 
+int {\bfseries to\+Destroy} =0
+\item 
+\mbox{\Hypertarget{class_arcanoid_af5013a9de3d321fe2b5af866c2e01263}\label{class_arcanoid_af5013a9de3d321fe2b5af866c2e01263}} 
+int {\bfseries level}
+\item 
+\mbox{\Hypertarget{class_arcanoid_a749f0439891a5eb911d377d1be9a864b}\label{class_arcanoid_a749f0439891a5eb911d377d1be9a864b}} 
+int {\bfseries points}
+\item 
+\mbox{\Hypertarget{class_arcanoid_a5ed20990a3d07fb7ff08961ec66cfda1}\label{class_arcanoid_a5ed20990a3d07fb7ff08961ec66cfda1}} 
+int {\bfseries temp\+Points}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+przechowuje funkcje do gry arkanoid 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_arcanoid_a6ba60219dbc5b27d31aa37c0427637b5}\label{class_arcanoid_a6ba60219dbc5b27d31aa37c0427637b5}} 
+\index{Arcanoid@{Arcanoid}!Arcanoid@{Arcanoid}}
+\index{Arcanoid@{Arcanoid}!Arcanoid@{Arcanoid}}
+\subsubsection{\texorpdfstring{Arcanoid()}{Arcanoid()}}
+{\footnotesize\ttfamily Arcanoid\+::\+Arcanoid (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+konstruktor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em poziom} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em liczba} & punktow \\
+\hline
+\mbox{\texttt{ in}}  & {\em tymczasowa} & liczba punktow \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_arcanoid_ae1af2953934cc8dbf8daf0cf5a3ad2bb}\label{class_arcanoid_ae1af2953934cc8dbf8daf0cf5a3ad2bb}} 
+\index{Arcanoid@{Arcanoid}!Draw@{Draw}}
+\index{Draw@{Draw}!Arcanoid@{Arcanoid}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Arcanoid\+::\+Draw (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{s\+Background,  }\item[{sf\+::\+Sprite \&}]{s\+Ball,  }\item[{sf\+::\+Sprite \&}]{s\+Paddle,  }\item[{sf\+::\+Sprite $\ast$}]{block }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+rysuje okno gry wraz z zawartoscia 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em grafika} & tla \\
+\hline
+\mbox{\texttt{ in}}  & {\em grafika} & pilki \\
+\hline
+\mbox{\texttt{ in}}  & {\em grafika} & platformy \\
+\hline
+\mbox{\texttt{ in}}  & {\em grafika} & klockow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arcanoid_a70100adb95613ddab4580d4db5cba2ff}\label{class_arcanoid_a70100adb95613ddab4580d4db5cba2ff}} 
+\index{Arcanoid@{Arcanoid}!NextLevel@{NextLevel}}
+\index{NextLevel@{NextLevel}!Arcanoid@{Arcanoid}}
+\subsubsection{\texorpdfstring{NextLevel()}{NextLevel()}}
+{\footnotesize\ttfamily void Arcanoid\+::\+Next\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+nastepny poziom 
+
+inkrementuje zmienna lewel,przypisuje zmiennej temp\+Points wartosc points i zaladowuje nowe tekstury \mbox{\Hypertarget{class_arcanoid_a9c73d2330927af62f5e777b5e977795a}\label{class_arcanoid_a9c73d2330927af62f5e777b5e977795a}} 
+\index{Arcanoid@{Arcanoid}!PaddleController@{PaddleController}}
+\index{PaddleController@{PaddleController}!Arcanoid@{Arcanoid}}
+\subsubsection{\texorpdfstring{PaddleController()}{PaddleController()}}
+{\footnotesize\ttfamily void Arcanoid\+::\+Paddle\+Controller (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{s\+Paddle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sterowanie platforma 
+
+platforma mozna sterowac tylo w lewo i prawo za pomoca przycisku strza³ek na klawiaturze lewo i prawo 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em grafika} & platformy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arcanoid_af254f59625b9c8ec42fe4ffc8166e8dd}\label{class_arcanoid_af254f59625b9c8ec42fe4ffc8166e8dd}} 
+\index{Arcanoid@{Arcanoid}!Positioning@{Positioning}}
+\index{Positioning@{Positioning}!Arcanoid@{Arcanoid}}
+\subsubsection{\texorpdfstring{Positioning()}{Positioning()}}
+{\footnotesize\ttfamily void Arcanoid\+::\+Positioning (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{s\+Background,  }\item[{sf\+::\+Sprite \&}]{s\+Ball,  }\item[{sf\+::\+Sprite \&}]{s\+Paddle,  }\item[{sf\+::\+Sprite $\ast$}]{block }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pozycjonowanie grafiki w oknie 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em grafika} & tla \\
+\hline
+\mbox{\texttt{ in}}  & {\em grafika} & pilki \\
+\hline
+\mbox{\texttt{ in}}  & {\em grafika} & platformy \\
+\hline
+\mbox{\texttt{ in}}  & {\em grafika} & klockow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arcanoid_a4858b07cf4d374ecfed2b8bc41f49943}\label{class_arcanoid_a4858b07cf4d374ecfed2b8bc41f49943}} 
+\index{Arcanoid@{Arcanoid}!SpawnBlock@{SpawnBlock}}
+\index{SpawnBlock@{SpawnBlock}!Arcanoid@{Arcanoid}}
+\subsubsection{\texorpdfstring{SpawnBlock()}{SpawnBlock()}}
+{\footnotesize\ttfamily void Arcanoid\+::\+Spawn\+Block (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite $\ast$}]{block }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tworzenie i pozycjonowanie klockow 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em grafika} & klockow \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Repository\+Programing/\+C\+P\+P\+Script/\+Final\+Pass\+C\+P\+P\+Lab\+Projct/\+Game\+Boy/include/Arcanoid.\+h\end{DoxyCompactItemize}

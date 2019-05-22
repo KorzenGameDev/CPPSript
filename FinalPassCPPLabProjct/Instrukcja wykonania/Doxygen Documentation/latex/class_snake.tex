@@ -1,0 +1,242 @@
+\hypertarget{class_snake}{}\section{Snake Class Reference}
+\label{class_snake}\index{Snake@{Snake}}
+
+
+przechowuje funkcje do gry snake  
+
+
+
+
+{\ttfamily \#include $<$Snake.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_snake_1_1_position}{Position}}
+\begin{DoxyCompactList}\small\item\em struktura przechowujaca wspolrzedne obiektow na mapie \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_snake_a1a20482bb3288419cb4754644238278d}{Snake}} (int, int, int)
+\begin{DoxyCompactList}\small\item\em konstruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_ada3eac2be422d8a28be5a291ee6038dd}\label{class_snake_ada3eac2be422d8a28be5a291ee6038dd}} 
+virtual \mbox{\hyperlink{class_snake_ada3eac2be422d8a28be5a291ee6038dd}{$\sim$\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em destruktor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a8089601a5766b40c737af82e3234b286}\label{class_snake_a8089601a5766b40c737af82e3234b286}} 
+void \mbox{\hyperlink{class_snake_a8089601a5766b40c737af82e3234b286}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em zaladowuje wszystkie glowne funkcje -\/ klasy menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snake_a21444150c1a3962cbc76c76d7f37f912}\label{class_snake_a21444150c1a3962cbc76c76d7f37f912}} 
+struct \mbox{\hyperlink{struct_snake_1_1_position}{Snake\+::\+Position}} {\bfseries snake} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{class_snake_ac8dc25416dba8f3f08468afd57b1760e}\label{class_snake_ac8dc25416dba8f3f08468afd57b1760e}} 
+struct \mbox{\hyperlink{struct_snake_1_1_position}{Snake\+::\+Position}} {\bfseries fruct} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{class_snake_ad6cb75d255d14ab38be52083ced6ddec}\label{class_snake_ad6cb75d255d14ab38be52083ced6ddec}} 
+struct \mbox{\hyperlink{struct_snake_1_1_position}{Snake\+::\+Position}} {\bfseries enemy} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{class_snake_a06dcbace70c4e9c80a22d023b432e29c}\label{class_snake_a06dcbace70c4e9c80a22d023b432e29c}} 
+struct \mbox{\hyperlink{struct_snake_1_1_position}{Snake\+::\+Position}} {\bfseries portal} \mbox{[}100\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snake_ae35717522e9eefa79a99b142e3deb77d}\label{class_snake_ae35717522e9eefa79a99b142e3deb77d}} 
+void \mbox{\hyperlink{class_snake_ae35717522e9eefa79a99b142e3deb77d}{Frame}} ()
+\begin{DoxyCompactList}\small\item\em odpowiada za kazda pojedyncza kaltke w grze \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_abc5fc642fb22f0448384d651cea6c987}\label{class_snake_abc5fc642fb22f0448384d651cea6c987}} 
+void \mbox{\hyperlink{class_snake_abc5fc642fb22f0448384d651cea6c987}{Move\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em poruszanie wezem \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a6c652aab9cfd9b5d5f153c9482783c4d}\label{class_snake_a6c652aab9cfd9b5d5f153c9482783c4d}} 
+bool \mbox{\hyperlink{class_snake_a6c652aab9cfd9b5d5f153c9482783c4d}{Detect\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em wykrywa kolizje weza z obiektami \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a9af1bc16fd13597d382315adf0986626}\label{class_snake_a9af1bc16fd13597d382315adf0986626}} 
+bool \mbox{\hyperlink{class_snake_a9af1bc16fd13597d382315adf0986626}{Spawn\+Portal}} ()
+\begin{DoxyCompactList}\small\item\em po przekroczeniu danej liczby pkt tworzy i pozycjonuje portal do nast poziomu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_ae65e64d86f8f2d40c49391f2988fb2d2}\label{class_snake_ae65e64d86f8f2d40c49391f2988fb2d2}} 
+void \mbox{\hyperlink{class_snake_ae65e64d86f8f2d40c49391f2988fb2d2}{Use\+Portal}} ()
+\begin{DoxyCompactList}\small\item\em przenosi gracza do nowego poziomu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_aadebf75d231d0c24c5d54cf7468ef857}\label{class_snake_aadebf75d231d0c24c5d54cf7468ef857}} 
+void \mbox{\hyperlink{class_snake_aadebf75d231d0c24c5d54cf7468ef857}{Teleporting}} ()
+\begin{DoxyCompactList}\small\item\em jesli nie ma scian odpowiada za poruszanie weza na krawedziach mapy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a819c70fc5ed3dbb1b31eca548f659e8b}\label{class_snake_a819c70fc5ed3dbb1b31eca548f659e8b}} 
+void \mbox{\hyperlink{class_snake_a819c70fc5ed3dbb1b31eca548f659e8b}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em rysuje okno gry z szata graficzna snake\textquotesingle{}a \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a4664d1acebc5de418688376679736342}\label{class_snake_a4664d1acebc5de418688376679736342}} 
+void \mbox{\hyperlink{class_snake_a4664d1acebc5de418688376679736342}{Load\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em laduje tekstury \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_a8830006b93d69da00d86377b8c8a8058}{Random\+Map}} ()
+\begin{DoxyCompactList}\small\item\em R\+A\+N\+D\+OM G\+E\+N\+E\+R\+A\+T\+I\+ON M\+AP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_a2a2ac1aea96c56217bee0821ee2a3919}{Position\+Fruct}} ()
+\begin{DoxyCompactList}\small\item\em Fruct. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snake_a0110dd9364ea1ef49d969d7347fae938}{Spawn\+Fruct}} ()
+\begin{DoxyCompactList}\small\item\em tworzy i wyswietla owoc \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snake_ab37f493e314b7d3b1c97ccafb2f5ad4d}\label{class_snake_ab37f493e314b7d3b1c97ccafb2f5ad4d}} 
+int \mbox{\hyperlink{class_snake_ab37f493e314b7d3b1c97ccafb2f5ad4d}{square\+Size}} =16
+\begin{DoxyCompactList}\small\item\em size \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a2d794fe10a4ffeb078c997aca5adb288}\label{class_snake_a2d794fe10a4ffeb078c997aca5adb288}} 
+int {\bfseries width\+In\+Square} =40
+\item 
+\mbox{\Hypertarget{class_snake_af535e6a6dbd8b04476b3bf69057a389e}\label{class_snake_af535e6a6dbd8b04476b3bf69057a389e}} 
+int {\bfseries height\+In\+Square} =22
+\item 
+\mbox{\Hypertarget{class_snake_af1c6be49728b83438c1d2728498a60b2}\label{class_snake_af1c6be49728b83438c1d2728498a60b2}} 
+int {\bfseries width\+In\+Pixel} = \mbox{\hyperlink{class_snake_ab37f493e314b7d3b1c97ccafb2f5ad4d}{square\+Size}}$\ast$width\+In\+Square
+\item 
+\mbox{\Hypertarget{class_snake_a54de694c64a86c320b203feb0c43e569}\label{class_snake_a54de694c64a86c320b203feb0c43e569}} 
+int {\bfseries height\+In\+Pixel} = \mbox{\hyperlink{class_snake_ab37f493e314b7d3b1c97ccafb2f5ad4d}{square\+Size}}$\ast$height\+In\+Square
+\item 
+sf\+::\+Render\+Window \mbox{\hyperlink{class_snake_ab0352383bcd926822a8567a78d51ad13}{window}}
+\begin{DoxyCompactList}\small\item\em end size \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a20ff62446c343ce055179e0640ba3239}\label{class_snake_a20ff62446c343ce055179e0640ba3239}} 
+sf\+::\+Texture {\bfseries t1}
+\item 
+\mbox{\Hypertarget{class_snake_ad359b3c1abd4119d48711cd9c589025d}\label{class_snake_ad359b3c1abd4119d48711cd9c589025d}} 
+sf\+::\+Texture {\bfseries t2}
+\item 
+\mbox{\Hypertarget{class_snake_aaa63311fb7597b507b4dfe9c960b2f4b}\label{class_snake_aaa63311fb7597b507b4dfe9c960b2f4b}} 
+sf\+::\+Texture {\bfseries t3}
+\item 
+\mbox{\Hypertarget{class_snake_ac9e5cff442d179c5f85de12d3399e7aa}\label{class_snake_ac9e5cff442d179c5f85de12d3399e7aa}} 
+sf\+::\+Texture {\bfseries t4}
+\item 
+\mbox{\Hypertarget{class_snake_ae77b99d47edeb6fccde889044a980b31}\label{class_snake_ae77b99d47edeb6fccde889044a980b31}} 
+sf\+::\+Texture {\bfseries t5}
+\item 
+\mbox{\Hypertarget{class_snake_a554f8394977c6bc9f48b6c43b6c263ff}\label{class_snake_a554f8394977c6bc9f48b6c43b6c263ff}} 
+sf\+::\+Texture {\bfseries t6}
+\item 
+\mbox{\Hypertarget{class_snake_a37f1c09c12e1281e3159f27d6acffdf6}\label{class_snake_a37f1c09c12e1281e3159f27d6acffdf6}} 
+sf\+::\+Texture {\bfseries t7}
+\item 
+\mbox{\Hypertarget{class_snake_a2c5a231e40c50b5f51641440cbc997d6}\label{class_snake_a2c5a231e40c50b5f51641440cbc997d6}} 
+sf\+::\+Texture {\bfseries t8}
+\item 
+\mbox{\Hypertarget{class_snake_a8f74504cda5a7da84cdfa2298fa3d226}\label{class_snake_a8f74504cda5a7da84cdfa2298fa3d226}} 
+sf\+::\+Texture {\bfseries t9}
+\item 
+\mbox{\Hypertarget{class_snake_ab7077881f84dc288935674bfbf0cf3d2}\label{class_snake_ab7077881f84dc288935674bfbf0cf3d2}} 
+sf\+::\+Texture {\bfseries t10}
+\item 
+\mbox{\Hypertarget{class_snake_a532802a50ebbc16bb849e87a45665323}\label{class_snake_a532802a50ebbc16bb849e87a45665323}} 
+int {\bfseries offsetX} =10
+\item 
+\mbox{\Hypertarget{class_snake_a7209d1f5ea9f30807622a7f10863185f}\label{class_snake_a7209d1f5ea9f30807622a7f10863185f}} 
+int {\bfseries offsetY} =4
+\item 
+\mbox{\Hypertarget{class_snake_a1349ccf7f145382b601ac41927f84af4}\label{class_snake_a1349ccf7f145382b601ac41927f84af4}} 
+int {\bfseries direction} =0
+\item 
+\mbox{\Hypertarget{class_snake_aea200183246ab4868cf238abca022ecc}\label{class_snake_aea200183246ab4868cf238abca022ecc}} 
+int {\bfseries snake\+Size} =1
+\item 
+\mbox{\Hypertarget{class_snake_ab1eac13b861353ac3e68b9a43957ba81}\label{class_snake_ab1eac13b861353ac3e68b9a43957ba81}} 
+int {\bfseries enemies} =10
+\item 
+\mbox{\Hypertarget{class_snake_a5e941a4a9a08563c37bf9ddafdf02d81}\label{class_snake_a5e941a4a9a08563c37bf9ddafdf02d81}} 
+int {\bfseries width} =960
+\item 
+\mbox{\Hypertarget{class_snake_a094d7065f72f8f2a612ae9a94e1b3ae0}\label{class_snake_a094d7065f72f8f2a612ae9a94e1b3ae0}} 
+int {\bfseries height} =480
+\item 
+\mbox{\Hypertarget{class_snake_af25b4123a2ba882c3c91e0c69597d5dc}\label{class_snake_af25b4123a2ba882c3c91e0c69597d5dc}} 
+int {\bfseries level}
+\item 
+\mbox{\Hypertarget{class_snake_a77d9f771bb6cc9b1d5f1e1d3813c4f20}\label{class_snake_a77d9f771bb6cc9b1d5f1e1d3813c4f20}} 
+int {\bfseries points}
+\item 
+\mbox{\Hypertarget{class_snake_a79ef0cd4238b641d50122a1e0c5be56b}\label{class_snake_a79ef0cd4238b641d50122a1e0c5be56b}} 
+int {\bfseries temp\+Points}
+\item 
+\mbox{\Hypertarget{class_snake_accc75a752b47f9f7bb3fd6a2bf00c653}\label{class_snake_accc75a752b47f9f7bb3fd6a2bf00c653}} 
+bool {\bfseries portal\+Exist} =false
+\item 
+\mbox{\Hypertarget{class_snake_a205f9783faa0a52f044a4564a6e640f4}\label{class_snake_a205f9783faa0a52f044a4564a6e640f4}} 
+bool {\bfseries flip} =false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+przechowuje funkcje do gry snake 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_snake_a1a20482bb3288419cb4754644238278d}\label{class_snake_a1a20482bb3288419cb4754644238278d}} 
+\index{Snake@{Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{Snake()}{Snake()}}
+{\footnotesize\ttfamily Snake\+::\+Snake (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+konstruktor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em poziom} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em liczba} & punktow \\
+\hline
+\mbox{\texttt{ in}}  & {\em tymczasowa} & liczba punktow \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snake_a2a2ac1aea96c56217bee0821ee2a3919}\label{class_snake_a2a2ac1aea96c56217bee0821ee2a3919}} 
+\index{Snake@{Snake}!PositionFruct@{PositionFruct}}
+\index{PositionFruct@{PositionFruct}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{PositionFruct()}{PositionFruct()}}
+{\footnotesize\ttfamily void Snake\+::\+Position\+Fruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fruct. 
+
+pozycjonuje owoc \mbox{\Hypertarget{class_snake_a8830006b93d69da00d86377b8c8a8058}\label{class_snake_a8830006b93d69da00d86377b8c8a8058}} 
+\index{Snake@{Snake}!RandomMap@{RandomMap}}
+\index{RandomMap@{RandomMap}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{RandomMap()}{RandomMap()}}
+{\footnotesize\ttfamily void Snake\+::\+Random\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+R\+A\+N\+D\+OM G\+E\+N\+E\+R\+A\+T\+I\+ON M\+AP. 
+
+generuje losowa mape
+
+sposob losowy usrtala pozycje wrogow pozycje scian jesli istnieja pozycje weza i pozycje pierwszego owoca \mbox{\Hypertarget{class_snake_a0110dd9364ea1ef49d969d7347fae938}\label{class_snake_a0110dd9364ea1ef49d969d7347fae938}} 
+\index{Snake@{Snake}!SpawnFruct@{SpawnFruct}}
+\index{SpawnFruct@{SpawnFruct}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{SpawnFruct()}{SpawnFruct()}}
+{\footnotesize\ttfamily bool Snake\+::\+Spawn\+Fruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tworzy i wyswietla owoc 
+
+\begin{DoxyReturn}{Returns}
+zwraca prawde jesli owoc zostal stworzony poprawnie 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_snake_ab0352383bcd926822a8567a78d51ad13}\label{class_snake_ab0352383bcd926822a8567a78d51ad13}} 
+\index{Snake@{Snake}!window@{window}}
+\index{window@{window}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window Snake\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+end size 
+
+to game 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Repository\+Programing/\+C\+P\+P\+Script/\+Final\+Pass\+C\+P\+P\+Lab\+Projct/\+Game\+Boy/include/Snake.\+h\end{DoxyCompactItemize}

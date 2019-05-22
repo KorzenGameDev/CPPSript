@@ -1,0 +1,105 @@
+\hypertarget{class_menu}{}\section{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+menu glowne projektu  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_ad466dd83355124a6ed958430450bfe94}\label{class_menu_ad466dd83355124a6ed958430450bfe94}} 
+\mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}} ()
+\begin{DoxyCompactList}\small\item\em konstruktor klasy menu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_a831387f51358cfb88cd018e1777bc980}\label{class_menu_a831387f51358cfb88cd018e1777bc980}} 
+\mbox{\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{$\sim$\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em destruktor klasy menu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_ab9e9fa4e003d3508fcfcf57e05ea33b7}\label{class_menu_ab9e9fa4e003d3508fcfcf57e05ea33b7}} 
+void \mbox{\hyperlink{class_menu_ab9e9fa4e003d3508fcfcf57e05ea33b7}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em zaladowuje wszystkie glowne funkcje -\/ klasy menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_aea20febfb2bcda09545a377b40f806fd}\label{class_menu_aea20febfb2bcda09545a377b40f806fd}} 
+void \mbox{\hyperlink{class_menu_aea20febfb2bcda09545a377b40f806fd}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em odpowiada za rysowanie okna menu glownego i opcji wyboru \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_afc65d89e9644e3b7b6eb18a59392b666}{Display\+Options}} (sf\+::\+Texture \&, sf\+::\+Texture \&, sf\+::\+Texture \&, sf\+::\+Texture \&)
+\begin{DoxyCompactList}\small\item\em ustawia i wyswietla opcje menu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_acfb038bbd1050d6c55c86eec1f35dbdb}\label{class_menu_acfb038bbd1050d6c55c86eec1f35dbdb}} 
+void \mbox{\hyperlink{class_menu_acfb038bbd1050d6c55c86eec1f35dbdb}{Move\+Up}} ()
+\begin{DoxyCompactList}\small\item\em inkrementuje wartosc selected\+Item\+Index \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_a804da9a381bb6c633d5d2bc4f839ec62}\label{class_menu_a804da9a381bb6c633d5d2bc4f839ec62}} 
+void \mbox{\hyperlink{class_menu_a804da9a381bb6c633d5d2bc4f839ec62}{Move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em dekrementuje wartosc selected\+Item\+Index \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_a81b2029bf7783f38be26000969e99e30}\label{class_menu_a81b2029bf7783f38be26000969e99e30}} 
+int {\bfseries Get\+Pressed\+Item} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_a285c5dff08d0d2bed1154a95daef6a76}\label{class_menu_a285c5dff08d0d2bed1154a95daef6a76}} 
+sf\+::\+Render\+Window {\bfseries window}
+\item 
+\mbox{\Hypertarget{class_menu_a2ae000e3d4ba6e276ff5f6a1b5748f50}\label{class_menu_a2ae000e3d4ba6e276ff5f6a1b5748f50}} 
+sf\+::\+Texture {\bfseries t1}
+\item 
+\mbox{\Hypertarget{class_menu_ad82d0c5fcace650ea878a1b08498b9dc}\label{class_menu_ad82d0c5fcace650ea878a1b08498b9dc}} 
+sf\+::\+Texture {\bfseries t2}
+\item 
+\mbox{\Hypertarget{class_menu_ae77cf1b4a4572ba0e06cbf905dc92346}\label{class_menu_ae77cf1b4a4572ba0e06cbf905dc92346}} 
+sf\+::\+Texture {\bfseries t3}
+\item 
+\mbox{\Hypertarget{class_menu_a12f88b5c9357dc22297e3b4a65b24984}\label{class_menu_a12f88b5c9357dc22297e3b4a65b24984}} 
+sf\+::\+Texture {\bfseries t4}
+\item 
+\mbox{\Hypertarget{class_menu_a30ec519ffccb75388150c64175c4959b}\label{class_menu_a30ec519ffccb75388150c64175c4959b}} 
+int {\bfseries width} =960
+\item 
+\mbox{\Hypertarget{class_menu_abfd154ce7b19dca62d1ce8483c6f7bba}\label{class_menu_abfd154ce7b19dca62d1ce8483c6f7bba}} 
+int {\bfseries height} =480
+\item 
+\mbox{\Hypertarget{class_menu_a464ef16fd28c0df35ee1d9f78c0ef895}\label{class_menu_a464ef16fd28c0df35ee1d9f78c0ef895}} 
+int {\bfseries selected\+Item\+Index} =0
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_a4b58a01007341bc613ba0b7c6ce16faa}\label{class_menu_a4b58a01007341bc613ba0b7c6ce16faa}} 
+static const int {\bfseries M\+A\+X\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+T\+E\+MS} =4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+menu glowne projektu 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_afc65d89e9644e3b7b6eb18a59392b666}\label{class_menu_afc65d89e9644e3b7b6eb18a59392b666}} 
+\index{Menu@{Menu}!DisplayOptions@{DisplayOptions}}
+\index{DisplayOptions@{DisplayOptions}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{DisplayOptions()}{DisplayOptions()}}
+{\footnotesize\ttfamily void Menu\+::\+Display\+Options (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{,  }\item[{sf\+::\+Texture \&}]{,  }\item[{sf\+::\+Texture \&}]{,  }\item[{sf\+::\+Texture \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ustawia i wyswietla opcje menu 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tekstura} & snake przycisku \\
+\hline
+\mbox{\texttt{ in}}  & {\em tekstura} & xionix przycisku \\
+\hline
+\mbox{\texttt{ in}}  & {\em tekstura} & arkanoid z przycisku \\
+\hline
+\mbox{\texttt{ in}}  & {\em tekstura} & exit z przycisku \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Repository\+Programing/\+C\+P\+P\+Script/\+Final\+Pass\+C\+P\+P\+Lab\+Projct/\+Game\+Boy/include/Menu.\+h\end{DoxyCompactItemize}

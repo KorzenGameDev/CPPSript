@@ -1,25 +1,37 @@
 #ifndef XIONIX_H
 #define XIONIX_H
 
-
+/**@brief przechowuje funkcje do gry xionix */
 class Xionix
 {
     public:
+        /**@brief konstruktor
+        *
+        *@param[in] poziom
+        */
         Xionix(int);
+        /**@brief  destruktor */
         virtual ~Xionix();
+        /**@brief zaladowuje wszystkie glowne funkcje - klasy menu */
         void Setup();
         const static int ROWS=21,COLUMNS=35;
+        /**@brief struktura wroga*/
     struct Enemy{
 
         int x=0,y=0,dx=0,dy=0;
         int tileSize=18;
 
+         /**@brief konstruktor wroga */
         Enemy()
         {
             x=y=300;
             dx=4-rand()%8;
             dy=4-rand()%8;
         }
+         /**@brief poruszanie sie wroga
+         *
+         *@param[in] tablica dwuwymairowa planszy
+         */
         void Move(int grid[ROWS][COLUMNS])
         {
             x+=dx;
@@ -34,11 +46,32 @@ class Xionix
                 y+=dy;
     }}};
     private:
+         /**@brief zapelnienie sie odcietych krawedzi mapy
+         *
+         *@param[in] tablica dwuwymiarowa planszy
+         *@param[in] x
+         *@param[in] y
+          */
         void Drop(int grid[ROWS][COLUMNS],int,int);
+         /**@brief zaladowuje tekstury */
         void LoadTextures();
+         /**@brief sterowanie graczem*/
         void PlayerController();
+         /**@brief poruszanie sie graczem
+         *
+         *@param[in] tablica dwywymiarowa planszy
+         */
         void Move(int grid[ROWS][COLUMNS]);
+         /**@brief nowy poziom w grze
+         *
+         *po wycieciu 300 kwadratow przenosi gracza na nastepny poziom
+         @param[in] tablica dwuwymiarowa planszy
+         */
         void NextLevel(int grid[ROWS][COLUMNS]);
+         /**@brief wykonuje pojedyncza klatke w grze
+         *
+         *param[in] tablica dwuwymiarowa planszy
+         *@param[in] tablica wrogow*/
         void Frame(int grid[ROWS][COLUMNS],Enemy enemy[100]);
 
         int width=960, height=480;

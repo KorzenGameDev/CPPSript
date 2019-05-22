@@ -1,8 +1,5 @@
 #include "Library.h"
 
-struct Position
-{ int x,y;} snake[100],fruct,enemy[100], portal;
-
 Snake::Snake(int l=1,int p=0,int t=0)
 : level(l), points(0), tempPoints(0)
 {
