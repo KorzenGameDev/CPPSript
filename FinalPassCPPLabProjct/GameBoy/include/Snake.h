@@ -42,7 +42,7 @@ class Snake
         int direction=0,snakeSize=1;
         int enemies=10;
         int width=960, height=480;
-        int points=0,tempPoints=0, level=1;
+        int level,points,tempPoints;
         bool portalExist=false;
         bool flip=false;
     ///end

@@ -1,6 +1,6 @@
 #include "Library.h"
 
-Arcanoid::Arcanoid(int l=1,int p=0,int t=0)
+Arcanoid::Arcanoid(int l,int p,int t)
 :level(l), points(p), tempPoints(t)
 {
 
@@ -44,7 +44,6 @@ void Arcanoid::Setup()
         Positioning(sBackground,sBall,sPaddle,block);
 
         window.clear();
-            std::cout<<points-tempPoints<<std::endl;
             if((points-tempPoints) >= blockNumber*7)
             {
                 NextLevel();
@@ -67,7 +66,7 @@ void Arcanoid::Draw(sf::Sprite &sBackground, sf::Sprite &sBall, sf::Sprite &sPad
 
     //////////////UPDATE SCORE/////////////
     sf::Font font;
-    if(!font.loadFromFile("arial.ttf"))
+    if(!font.loadFromFile("RetroGaming.ttf"))
         std::cout<<"ERROR LOAD FONT!"<<std::endl;
 
     sf::Text text;
@@ -139,8 +138,6 @@ void Arcanoid::LoadTextures()
     t2.loadFromFile("images/menu/nintendo.png");
     t3.loadFromFile("images/arcanoid/ball.png");
     t4.loadFromFile("images/arcanoid/paddle.png");
-
-    std::cout<<"LOAD TEXTURES DONE"<<std::endl;
 }
 
 void Arcanoid::SpawnBlock(sf::Sprite *block)

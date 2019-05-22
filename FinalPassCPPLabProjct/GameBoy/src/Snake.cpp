@@ -3,8 +3,8 @@
 struct Position
 { int x,y;} snake[100],fruct,enemy[100], portal;
 
-Snake::Snake(int l=0, int p=0, int t=0)
-: level(l), points(p),tempPoints(t)
+Snake::Snake(int l=1,int p=0,int t=0)
+: level(l), points(0), tempPoints(0)
 {
 }
 
@@ -206,7 +206,7 @@ void Snake::Draw()
 
         //////////////UPDATE SCORE/////////////
         sf::Font font;
-        if(!font.loadFromFile("arial.ttf"))
+        if(!font.loadFromFile("RetroGaming.ttf"))
             std::cout<<"ERROR LOAD FONT!"<<std::endl;
 
         sf::Text text;
@@ -243,8 +243,6 @@ void Snake::RandomMap()
     ///start position of player
     snake[0].x=5+offsetX;
     snake[0].y=5+offsetY;
-
-    points=0;
 
     //Random position enemy
     for(int i=0; i<enemies; i++)
@@ -302,9 +300,9 @@ bool Snake::SpawnFruct()
         {
             return true;
         }
-
-        return false;
     }
+
+    return false;
 }
 
 //spawn fruit
@@ -322,7 +320,7 @@ void Snake::PositionFruct()
     fruct.x=fruct.x+offsetX;
     fruct.y=fruct.y+offsetY;
 
-    std::cout<<"Pozycja owoca x: "<<fruct.x<<" y: "<<fruct.y<<std::endl;
+    //std::cout<<"Pozycja owoca x: "<<fruct.x<<" y: "<<fruct.y<<std::endl;
 
 }
 
@@ -352,7 +350,7 @@ bool Snake::SpawnPortal()
     portal.x=x;
     portal.y=y;
 
-    std::cout<<"Portal position x: " <<portal.x <<" y: "<<portal.y<<std::endl;
+    //std::cout<<"Portal position x: " <<portal.x <<" y: "<<portal.y<<std::endl;
 
     portalExist =true;
     return true;

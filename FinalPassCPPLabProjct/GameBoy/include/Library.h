@@ -15,6 +15,7 @@
 #include "Snake.h"
 #include "Score.h"
 #include "Arcanoid.h"
+#include "Xionix.h"
 
 //NAMESPACE
 using namespace std;

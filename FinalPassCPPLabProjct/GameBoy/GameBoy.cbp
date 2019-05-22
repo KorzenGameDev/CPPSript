@@ -58,11 +58,13 @@
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Score.h" />
 		<Unit filename="include/Snake.h" />
+		<Unit filename="include/Xionix.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Arcanoid.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Score.cpp" />
 		<Unit filename="src/Snake.cpp" />
+		<Unit filename="src/Xionix.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

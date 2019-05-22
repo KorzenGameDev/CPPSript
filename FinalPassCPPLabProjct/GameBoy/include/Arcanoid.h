@@ -21,12 +21,11 @@ private:
 	sf::RenderWindow window;
 	int width=960, height=480;
     float dx=4, dy=4;
-	float x=width/2, y=height/2;
+	float x=width/2, y=height/2+100;
 	int offsetXmin=170, offsetXmax=800;
 	int blockNumber=0;
 	int toDestroyMax=0,toDestroy=0;
-	int points=0,tempPoints=0;
-	int level=0;
+	int level,points,tempPoints;
 };
 
 #endif // ARCANOID_H

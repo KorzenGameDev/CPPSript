@@ -22,6 +22,7 @@ void Menu::Setup()
 			switch (event.type)
 			{
 			case sf::Event::KeyReleased:
+            {
 				switch (event.key.code)
 				{
 				case sf::Keyboard::Up:
@@ -33,6 +34,7 @@ void Menu::Setup()
 					break;
 
 				case sf::Keyboard::Return:
+                {
 					switch (GetPressedItem())
 					{
 					case 0:
@@ -44,8 +46,13 @@ void Menu::Setup()
                             break;
 					    }
 					case 1:
-						std::cout << "Game 2 button has been pressed" << std::endl;
-						break;
+                        {
+                            window.close();
+
+                            Xionix xionix(1);
+                            xionix.Setup();
+                            break;
+					    }
                     case 2:
                         {
                             window.close();
@@ -57,17 +64,22 @@ void Menu::Setup()
 					case 3:
 						window.close();
 						break;
+
+                    default:
+                        break;
 					}
-
-					break;
+                }
+                default:
+                    break;
 				}
-
 				break;
-                case sf::Event::Closed:
-                    window.close();
+            }
+            case sf::Event::Closed:
+                window.close();
+            break;
 
-				break;
-
+            default:
+                break;
 			}
 		}
 
