@@ -54,7 +54,7 @@ private:
     /**@brief inkrementuje zmienna points*/
     void GetPoint();
 
-    sf::Texture t1,t2,t3,t4;
+    sf::Texture t1,t2,t3,t4,t5;
 	sf::RenderWindow window;
 	int width=960, height=480;
     float dx=4, dy=4;

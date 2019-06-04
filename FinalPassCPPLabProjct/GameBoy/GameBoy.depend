@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1558549440 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\snake.cpp
+1559667446 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\snake.cpp
 	"Library.h"
 
-1558548546 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\snake.h
+1558562830 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\snake.h
 
 1525815618 g:\repositoryprograming\cppscript\finalpasscpplabprojct\sfml-2.5.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -413,7 +413,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1557943437 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\main.cpp
+1559667097 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\main.cpp
 	"Library.h"
 
 1558559837 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\menu.cpp
@@ -525,7 +525,7 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1558531809 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\library.h
+1559667456 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\library.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
@@ -537,18 +537,23 @@
 	"Arcanoid.h"
 	"Xionix.h"
 
-1558533253 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\score.h
+1558561242 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\score.h
 
 1558549404 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\score.cpp
 	"Library.h"
 
-1558548636 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\arcanoid.h
+1559666014 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\arcanoid.h
 
-1558558751 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\arcanoid.cpp
+1559666099 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\arcanoid.cpp
 	"Library.h"
 
-1558548169 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\xionix.h
+1558562545 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\xionix.h
 
 1558549454 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\xionix.cpp
+	"Library.h"
+
+1559666714 g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\include\musicmenager.h
+
+1559666978 source:g:\repositoryprograming\cppscript\finalpasscpplabprojct\gameboy\src\musicmenager.cpp
 	"Library.h"
 

@@ -4,6 +4,8 @@
 //SFML
  /**@brief podlaczenie biblioteki graficznej */
 #include <SFML/Graphics.hpp>
+/**@brief podlaczenie biblioteki muzycznej */
+#include <SFML/Audio.hpp>
 
 //C++
  /**@brief biblioteka standardowa*/

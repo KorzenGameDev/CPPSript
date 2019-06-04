@@ -19,7 +19,7 @@ void Arcanoid::Setup()
 
     LoadTextures();
     NextLevel();
-    sf::Sprite sBackground(t2),sBall(t3), sPaddle(t4);
+    sf::Sprite sBackground(t2),sBall(t3), sPaddle(t4), sBg(t5);
     sPaddle.setPosition(width/2,height-75);
     sf::Sprite block[300];
 
@@ -49,7 +49,7 @@ void Arcanoid::Setup()
                 NextLevel();
                 SpawnBlock(block);
             }
-
+            window.draw(sBg);
             Draw(sBackground,sBall,sPaddle,block);
         window.display();
     }
@@ -138,6 +138,7 @@ void Arcanoid::LoadTextures()
     t2.loadFromFile("images/menu/nintendo.png");
     t3.loadFromFile("images/arcanoid/ball.png");
     t4.loadFromFile("images/arcanoid/paddle.png");
+    t5.loadFromFile("images/menu/bg.png");
 }
 
 void Arcanoid::SpawnBlock(sf::Sprite *block)
